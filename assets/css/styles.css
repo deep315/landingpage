@@ -5,7 +5,7 @@
   --header-height: 3rem;
 
   /*===== Colors =====*/
-  --first-color: #FCA4A6;
+  --first-color: #f15a25;
   --first-color-dark: #C1576A;
   --first-color-darken: #A83E51;
   --white-color: #FCF8F8;
@@ -74,7 +74,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--first-color);
+  background-color: #124559;
 }
 
 /*===== NAV =====*/
@@ -93,8 +93,7 @@ img{
     width: 70%;
     height: 100%;
     padding: 3.5rem 1.5rem 0;
-    background: rgba(255,255,255,.3);
-    backdrop-filter: blur(10px);
+    background-color: #124559;
     transition: .5s;
   }
 }
@@ -114,6 +113,15 @@ img{
 .nav__close, .nav__link, .nav__logo, .nav__toggle{
   color: var(--white-color);
 }
+
+.nav__img{
+  width: 100%;
+  height: 100%;
+}
+/* .attachment {
+  width: 100%;
+  height: auto;
+} */
 
 .nav__link:hover{
   color: var(--first-color-dark);
@@ -171,14 +179,55 @@ img{
 
 .home__button{
   display: inline-block;
-  background-color: var(--first-color-dark);
+  background-color: #54bcab;
   color: var(--white-color);
   padding: 1.125rem 2rem;
   border-radius: .5rem;
 }
 
+.reviews {
+  /* Existing styles for the reviews section */
+  padding: 1%;
+  position: relative; /* Make the reviews section a positioning context */
+  background-color: #f9b348;
+  .swiper-button-prev,
+  .swiper-button-next {
+      position: absolute;
+      top: 70%;
+      transform: translateY(-70%);
+  }
+  .swiper-slide{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .downing{
+    width: 5;
+    height: auto;
+    padding-left: 35%;
+    padding-top: 2%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #124559;
+  color: white;
+}
+
 .home__button:hover{
-  background-color: var(--first-color-darken);
+  z-index: 9999;
+  background-color: #124559;
+}
+.fcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.ftext {
+  padding-left: 50px;
 }
 
 /* ===== MEDIA QUERIES =====*/

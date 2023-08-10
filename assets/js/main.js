@@ -13,6 +13,20 @@ closeMenu.addEventListener('click', ()=>{
     navMenu.classList.remove('show')
 })
 
+//Carousel
+document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        loop: true,
+        navigation: {
+            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+        },
+        // ... add more options as needed
+    });
+});
+
 /*===== MOUSEMOVE HOME IMG =====*/
 document.addEventListener('mousemove', move);
 function move(e){
